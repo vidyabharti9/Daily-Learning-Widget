@@ -1,0 +1,18 @@
+[
+    {
+      "id": 1,
+      "subject": "Biology",
+      "fact": "Honeybees can recognize human faces! They can remember and distinguish between different faces."
+    },
+    {
+      "id": 2,
+      "subject": "Physics",
+      "fact": "An object in motion stays in motion unless acted on by an external force."
+    },
+    {
+      "id": 3,
+      "subject": "Chemistry",
+      "fact": "Water expands as it freezes, unlike most other substances."
+    }
+  ]
+  
