@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/vidyabharti9/Daily-Learning-Widget/static/css/main.5c42c63f.css",
-    "main.js": "/vidyabharti9/Daily-Learning-Widget/static/js/main.7e12caa1.js",
-    "static/js/453.64ef096b.chunk.js": "/vidyabharti9/Daily-Learning-Widget/static/js/453.64ef096b.chunk.js",
-    "index.html": "/vidyabharti9/Daily-Learning-Widget/index.html",
-    "main.5c42c63f.css.map": "/vidyabharti9/Daily-Learning-Widget/static/css/main.5c42c63f.css.map",
-    "main.7e12caa1.js.map": "/vidyabharti9/Daily-Learning-Widget/static/js/main.7e12caa1.js.map",
-    "453.64ef096b.chunk.js.map": "/vidyabharti9/Daily-Learning-Widget/static/js/453.64ef096b.chunk.js.map"
+    "main.css": "/Daily-Learning-Widget/static/css/main.5c42c63f.css",
+    "main.js": "/Daily-Learning-Widget/static/js/main.9fa669be.js",
+    "static/js/453.64ef096b.chunk.js": "/Daily-Learning-Widget/static/js/453.64ef096b.chunk.js",
+    "index.html": "/Daily-Learning-Widget/index.html",
+    "main.5c42c63f.css.map": "/Daily-Learning-Widget/static/css/main.5c42c63f.css.map",
+    "main.9fa669be.js.map": "/Daily-Learning-Widget/static/js/main.9fa669be.js.map",
+    "453.64ef096b.chunk.js.map": "/Daily-Learning-Widget/static/js/453.64ef096b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5c42c63f.css",
-    "static/js/main.7e12caa1.js"
+    "static/js/main.9fa669be.js"
   ]
 }
