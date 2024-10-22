@@ -1,18 +1,31 @@
 [
     {
-      "id": 1,
       "subject": "Biology",
-      "fact": "Honeybees can recognize human faces! They can remember and distinguish between different faces."
+      "fact": "Our DNA is stored in 23 pairs of chromosomes within the nucleus of every cell in our body."
     },
     {
-      "id": 2,
       "subject": "Physics",
-      "fact": "An object in motion stays in motion unless acted on by an external force."
+      "fact": "Light takes approximately 8 minutes and 20 seconds to travel from the Sun to the Earth."
     },
     {
-      "id": 3,
       "subject": "Chemistry",
-      "fact": "Water expands as it freezes, unlike most other substances."
+      "fact": "Water is the only substance on Earth that exists in three states: solid, liquid, and gas."
+    },
+    {
+      "subject": "Astronomy",
+      "fact": "There are more stars in the universe than grains of sand on all the Earth's beaches."
+    },
+    {
+      "subject": "Psychology",
+      "fact": "The placebo effect can occur even when people know they are taking a placebo."
+    },
+    {
+      "subject": "Geology",
+      "fact": "The Earth's inner core is as hot as the surface of the sun, reaching temperatures up to 9,932°F (5,500°C)."
+    },
+    {
+      "subject": "Astrobiology",
+      "fact": "Astrobiology is the study of life in the universe, including the search for extraterrestrial life."
     }
   ]
   
