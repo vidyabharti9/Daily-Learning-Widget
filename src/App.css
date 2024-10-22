@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f0f0; /* Light background for light mode */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh; /* Ensure full height */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+.container {
+  width: 80%; /* Reduced width for a cleaner look */
+  margin: auto; /* Center container */
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between; /* Space out elements */
+  align-items: center;
+  margin-bottom: 20px; /* Space below top bar */
+}
+
+.icons {
+  display: flex;
+  gap: 20px; /* Increased space between icons */
+}
+
+.settings-modal {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+  margin-bottom: 20px; /* Space below settings modal */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+.settings-modal:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+.fact-section {
+  background: #ffffff; /* White background for fact section */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+  margin-bottom: 20px; /* Space below fact section */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+.fact-section:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+button {
+  background-color: #4caf50; /* Green background for buttons */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+  margin: 5px; /* Margin between buttons */
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: translateY(-3px); /* Lift effect on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow on hover */
+}
+
+.progress-container {
+  height: 30px; /* Fixed height */
+  width: 100%; /* Full width */
+  background-color: #e0e0df; /* Light gray background */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Keep the shape */
+  margin: 20px 0; /* Space around progress bar */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  transition: transform 0.3s; /* Smooth transition */
+}
+
+.progress-container:hover {
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.progress-bar {
+  height: 100%; /* Full height to fill the container */
+  background-color: #4caf50; /* Green color for progress */
+  border-radius: 10px; /* Match the container's border radius */
+  transition: width 0.4s ease, background-color 0.3s; /* Smooth transition for filling effect */
+}
+
+.bookmarks {
+  margin-top: 20px;
+  background: #ffffff; /* White background for bookmarks */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+.bookmarks:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+.delete-btn {
+  background-color: #ff5252; /* Red color for delete button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+  margin-left: 10px; /* Space between text and delete button */
+}
+
+.delete-btn:hover {
+  background-color: #ff1744; /* Darker red on hover */
+  transform: translateY(-3px); /* Lift effect on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow on hover */
+}
+
+/* Dark theme styles */
+.dark {
+  background-color: #121212; /* Dark background for dark mode */
+  color: white; /* White text for dark mode */
+}
+
+.dark .settings-modal,
+.dark .fact-section,
+.dark .bookmarks {
+  background: #1e1e1e; /* Dark background for cards */
+  border: 1px solid #333; /* Dark border for cards */
+}
+
+/* Add 3D effect */
+button, .progress-container, .settings-modal, .fact-section, .bookmarks {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* 3D shadow effect */
+}
+select {
+  padding: 10px; /* Add padding for better spacing */
+  border-radius: 5px; /* Rounded corners */
+  border: 2px solid #4A90E2; /* Border color */
+  background-color: #FFFFFF; /* Background color for light mode */
+  color: #333333; /* Text color for better readability */
+  transition: border-color 0.3s; /* Smooth transition for hover effect */
+  font-family: 'Poppins', sans-serif; /* Consistent font */
+  width: 100%; /* Full width */
+  max-width: 250px; /* Max width for the dropdown */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Add styles for the dropdown in dark mode */
+.dark select {
+  background-color: #333333; /* Dark background */
+  color: #FFFFFF; /* White text */
+  border-color: #555555; /* Darker border for contrast */
+}
+
+select:hover {
+  border-color: #0056b3; /* Border color on hover */
+}
+
+option {
+  padding: 10px; /* Padding for options */
+}
