@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react';
 import ProgressBar from './components/ProgressBar';
 import './App.css';
 import { FaCog, FaSun, FaMoon } from 'react-icons/fa'; 
+import factsData from './facts.json'; // Import the facts JSON directly
 
 const App = () => {
-  const [facts, setFacts] = useState([]);
-  const [currentFact, setCurrentFact] = useState(null);
+  const [facts, setFacts] = useState(factsData); // Use imported data directly
+  const [currentFact, setCurrentFact] = useState(factsData.length > 0 ? factsData[0] : null); // Initialize with the first fact
   const [bookmarks, setBookmarks] = useState([]);
   const [history, setHistory] = useState([]);
   const [selectedSubject, setSelectedSubject] = useState('Biology');
@@ -13,18 +14,6 @@ const App = () => {
   const [progress, setProgress] = useState(0);
   const [darkTheme, setDarkTheme] = useState(false); 
   const [showSettings, setShowSettings] = useState(false); 
-
-  // Load facts from JSON file
-  useEffect(() => {
-    fetch('/facts.json') // Ensure the path is correct
-      .then(res => res.json())
-      .then(data => {
-        setFacts(data);
-        if (data.length > 0) {
-          setCurrentFact(data[0]); // Set the first fact initially
-        }
-      });
-  }, []);
 
   // Select a new fact when the subject changes
   useEffect(() => {
