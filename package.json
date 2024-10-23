@@ -2,7 +2,7 @@
   "name": "daily-learning-widget",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vidyabharti9.github.io/Daily-Learning-Widget/",
+  "homepage": "/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",

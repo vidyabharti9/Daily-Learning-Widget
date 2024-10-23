@@ -5,7 +5,7 @@ import { FaCog, FaSun, FaMoon } from 'react-icons/fa';
 import factsData from './facts.json'; // Import the facts JSON directly
 
 const App = () => {
-  const [facts, setFacts] = useState(factsData); // Use imported data directly
+  const [facts] = useState(factsData); // Use imported data directly
   const [currentFact, setCurrentFact] = useState(factsData.length > 0 ? factsData[0] : null); // Initialize with the first fact
   const [bookmarks, setBookmarks] = useState([]);
   const [history, setHistory] = useState([]);
