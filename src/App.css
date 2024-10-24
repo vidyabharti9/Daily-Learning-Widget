@@ -1,174 +1,214 @@
+/* App.css */
+
+/* Global Styles */
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: #f0f0f0; /* Light background for light mode */
-  transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+  font-family: 'Comic Sans MS', sans-serif; /* Fun font for kids */
+  background-color: #fffbec; /* Soft pastel background for light mode */
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .App {
-  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
   padding: 20px;
-  min-height: 100vh; /* Ensure full height */
-  transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
 }
 
-.container {
-  width: 80%; /* Reduced width for a cleaner look */
-  margin: auto; /* Center container */
+/* Dark Mode Styles */
+.dark {
+  background-color: #333d4b; /* Darker, kid-friendly background */
+  color: #ffffff;
 }
 
-.top-bar {
+/* Header Styles */
+.header {
   display: flex;
-  justify-content: space-between; /* Space out elements */
+  justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px; /* Space below top bar */
+  padding: 10px 0;
 }
 
-.icons {
+.header h1 {
+  font-size: 3rem; /* Larger, playful size */
+  margin: 0;
+  color: #f77f00; /* Bright orange for primary color */
+}
+
+.chip-container {
   display: flex;
-  gap: 20px; /* Increased space between icons */
+  gap: 10px;
 }
 
-.settings-modal {
-  background: white;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
-  margin-bottom: 20px; /* Space below settings modal */
-  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
-}
-
-.settings-modal:hover {
-  transform: translateY(-5px); /* Lift effect on hover */
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
-}
-
-.fact-section {
-  background: #ffffff; /* White background for fact section */
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
-  margin-bottom: 20px; /* Space below fact section */
-  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
-}
-
-.fact-section:hover {
-  transform: translateY(-5px); /* Lift effect on hover */
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
-}
-
-button {
-  background-color: #4caf50; /* Green background for buttons */
-  color: white;
+.chip {
+  padding: 12px 18px; /* Larger buttons */
   border: none;
-  border-radius: 5px;
-  padding: 10px 15px;
+  border-radius: 20px;
+  background-color: #ffb4a2; /* Soft pink chips */
+  color: #fff;
+  font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transition */
-  margin: 5px; /* Margin between buttons */
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-button:hover {
-  background-color: #45a049; /* Darker green on hover */
-  transform: translateY(-3px); /* Lift effect on hover */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow on hover */
+.chip:hover {
+  background-color: #f77f00; /* Change to orange on hover */
+  transform: scale(1.1); /* Bigger hover effect */
 }
 
+.chip.active {
+  background-color: #ff4800; /* Bright red for active chips */
+  color: #fff;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem; /* Larger, fun icons */
+  color: #f77f00;
+}
+
+/* Fact Container Styles */
+.fact-container {
+  margin: 20px 0;
+  padding: 25px;
+  border-radius: 15px; /* Rounded corners */
+  background-color: #ffddd2; /* Light pink background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.dark .fact-container {
+  background-color: #1c2938; /* Dark mode but still friendly */
+}
+
+/* Buttons */
+.mark-learned-button, .bookmark-button, .delete-button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem; /* Larger font for better readability */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.mark-learned-button {
+  background-color: #8ecae6; /* Soft blue for learned */
+  color: white;
+}
+
+.mark-learned-button.learned {
+  background-color: #219ebc; /* Bright blue when learned */
+}
+
+.bookmark-button {
+  background-color: #f77f00; /* Orange for bookmark */
+  color: white;
+}
+
+.bookmark-button.bookmarked {
+  background-color: #d62828; /* Red when bookmarked */
+}
+
+.delete-button {
+  background-color: #ffddd2; /* Light, less aggressive delete button */
+  color: #d62828; /* Red for delete action */
+}
+
+.delete-button:hover {
+  background-color: #e63946; /* Bright red on hover */
+  color: #fff;
+}
+
+/* Progress Bar */
 .progress-container {
-  height: 30px; /* Fixed height */
-  width: 100%; /* Full width */
-  background-color: #e0e0df; /* Light gray background */
-  border-radius: 10px; /* Rounded corners */
-  overflow: hidden; /* Keep the shape */
-  margin: 20px 0; /* Space around progress bar */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-  transition: transform 0.3s; /* Smooth transition */
-}
-
-.progress-container:hover {
-  transform: translateY(-2px); /* Lift effect on hover */
+  margin-top: 20px;
+  height: 15px; /* Thicker bar for visibility */
+  background-color: #ffb4a2; /* Light pink background */
+  border-radius: 10px;
 }
 
 .progress-bar {
-  height: 100%; /* Full height to fill the container */
-  background-color: #4caf50; /* Green color for progress */
-  border-radius: 10px; /* Match the container's border radius */
-  transition: width 0.4s ease, background-color 0.3s; /* Smooth transition for filling effect */
-}
-
-.bookmarks {
-  margin-top: 20px;
-  background: #ffffff; /* White background for bookmarks */
+  height: 100%;
+  background-color: #8ecae6; /* Soft blue for progress */
   border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+/* Bookmarked Facts */
+.bookmarked-facts {
+  margin: 20px 0;
+}
+
+.bookmarked-facts h3 {
+  margin: 0;
+  color: #f77f00; /* Orange headings */
+}
+
+.bookmarked-facts ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Congratulations Message */
+.congratulations-message {
+  background-color: #8ecae6; /* Soft blue background */
+  color: white;
   padding: 20px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
-  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+  border-radius: 15px;
+  text-align: center;
+  font-size: 1.5rem; /* Larger font for a fun congratulation message */
 }
 
-.bookmarks:hover {
-  transform: translateY(-5px); /* Lift effect on hover */
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+/* Settings Dialog */
+.settings-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  background-color: #ffddd2; /* Light pink for the dialog */
+  z-index: 1000;
+  transition: background-color 0.3s ease;
 }
 
-.delete-btn {
-  background-color: #ff5252; /* Red color for delete button */
+.dark .settings-dialog {
+  background-color: #1c2938; /* Dark mode but still friendly */
+}
+
+.settings-dialog h3 {
+  margin: 0 0 10px;
+  color: #f77f00; /* Orange headings */
+}
+
+.settings-dialog button {
+  margin-top: 10px;
+  background-color: #f77f00; /* Bright orange buttons */
   color: white;
   border: none;
-  border-radius: 5px;
-  padding: 5px 10px;
+  padding: 12px 18px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transition */
-  margin-left: 10px; /* Space between text and delete button */
+  transition: background-color 0.3s ease;
 }
 
-.delete-btn:hover {
-  background-color: #ff1744; /* Darker red on hover */
-  transform: translateY(-3px); /* Lift effect on hover */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow on hover */
+.settings-dialog button:hover {
+  background-color: #d62828; /* Bright red on hover */
 }
 
-/* Dark theme styles */
-.dark {
-  background-color: #121212; /* Dark background for dark mode */
-  color: white; /* White text for dark mode */
-}
-
-.dark .settings-modal,
-.dark .fact-section,
-.dark .bookmarks {
-  background: #1e1e1e; /* Dark background for cards */
-  border: 1px solid #333; /* Dark border for cards */
-}
-
-/* Add 3D effect */
-button, .progress-container, .settings-modal, .fact-section, .bookmarks {
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* 3D shadow effect */
-}
-select {
-  padding: 10px; /* Add padding for better spacing */
-  border-radius: 5px; /* Rounded corners */
-  border: 2px solid #4A90E2; /* Border color */
-  background-color: #FFFFFF; /* Background color for light mode */
-  color: #333333; /* Text color for better readability */
-  transition: border-color 0.3s; /* Smooth transition for hover effect */
-  font-family: 'Poppins', sans-serif; /* Consistent font */
-  width: 100%; /* Full width */
-  max-width: 250px; /* Max width for the dropdown */
-  cursor: pointer; /* Change cursor to pointer */
-}
-
-/* Add styles for the dropdown in dark mode */
-.dark select {
-  background-color: #333333; /* Dark background */
-  color: #FFFFFF; /* White text */
-  border-color: #555555; /* Darker border for contrast */
-}
-
-select:hover {
-  border-color: #0056b3; /* Border color on hover */
-}
-
-option {
-  padding: 10px; /* Padding for options */
+/* Snackbar */
+.snackbar {
+  background-color: #8ecae6; /* Soft blue snackbar */
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.2rem; /* Larger, readable font */
+  transition: opacity 0.5s ease;
 }

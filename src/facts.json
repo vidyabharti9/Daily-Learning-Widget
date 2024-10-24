@@ -1,31 +1,50 @@
-[
-    {
-      "subject": "Biology",
-      "fact": "Our DNA is stored in 23 pairs of chromosomes within the nucleus of every cell in our body."
-    },
-    {
-      "subject": "Physics",
-      "fact": "Light takes approximately 8 minutes and 20 seconds to travel from the Sun to the Earth."
-    },
-    {
-      "subject": "Chemistry",
-      "fact": "Water is the only substance on Earth that exists in three states: solid, liquid, and gas."
-    },
-    {
-      "subject": "Astronomy",
-      "fact": "There are more stars in the universe than grains of sand on all the Earth's beaches."
-    },
-    {
-      "subject": "Psychology",
-      "fact": "The placebo effect can occur even when people know they are taking a placebo."
-    },
-    {
-      "subject": "Geology",
-      "fact": "The Earth's inner core is as hot as the surface of the sun, reaching temperatures up to 9,932°F (5,500°C)."
-    },
-    {
-      "subject": "Astrobiology",
-      "fact": "Astrobiology is the study of life in the universe, including the search for extraterrestrial life."
-    }
+{
+  "physics": [
+    "Fact 1: Physics is the study of matter, energy, and their interactions.",
+    "Fact 2: Newton's First Law states that an object in motion stays in motion.",
+    "Fact 3: Light behaves both as a particle and a wave.",
+    "Fact 4: The speed of light in a vacuum is about 299,792 km per second.",
+    "Fact 5: Gravity is the force that attracts two bodies toward each other.",
+    "Fact 6: Electricity and magnetism are two aspects of electromagnetism.",
+    "Fact 7: Quantum physics deals with particles on the atomic and subatomic scale.",
+    "Fact 8: Einstein's theory of relativity introduced the concept of spacetime.",
+    "Fact 9: The laws of thermodynamics govern energy transfer.",
+    "Fact 10: Black holes are regions of space where gravity is so strong that not even light can escape."
+  ],
+  "chemistry": [
+    "Fact 1: Chemistry is the study of matter and the changes it undergoes.",
+    "Fact 2: The periodic table arranges elements based on atomic number.",
+    "Fact 3: Water is made up of two hydrogen atoms and one oxygen atom (H2O).",
+    "Fact 4: Chemical reactions involve breaking and forming bonds between atoms.",
+    "Fact 5: Acids have a pH less than 7, while bases have a pH greater than 7.",
+    "Fact 6: Carbon is the basis of organic chemistry.",
+    "Fact 7: Metals are good conductors of heat and electricity.",
+    "Fact 8: In a balanced chemical equation, the number of atoms of each element is the same on both sides.",
+    "Fact 9: Radioactive decay occurs when an unstable atomic nucleus loses energy.",
+    "Fact 10: The mole is a unit used to measure the amount of substance in chemistry."
+  ],
+  "biology": [
+    "Fact 1: Biology is the study of living organisms.",
+    "Fact 2: DNA carries the genetic information of most living organisms.",
+    "Fact 3: Cells are the basic unit of life.",
+    "Fact 4: Evolution is the process by which species change over time.",
+    "Fact 5: Photosynthesis is how plants convert light energy into chemical energy.",
+    "Fact 6: The human body is made up of approximately 37 trillion cells.",
+    "Fact 7: Mitochondria are the powerhouses of the cell, providing energy.",
+    "Fact 8: Proteins are made of long chains of amino acids.",
+    "Fact 9: The circulatory system is responsible for transporting blood throughout the body.",
+    "Fact 10: Bacteria can reproduce rapidly through binary fission."
+  ],
+  "astronomy": [
+    "Fact 1: Astronomy is the study of celestial objects and the universe.",
+    "Fact 2: The universe is about 13.8 billion years old.",
+    "Fact 3: Our solar system consists of eight planets.",
+    "Fact 4: The Sun is a star that is over 4.5 billion years old.",
+    "Fact 5: Black holes are formed from collapsed stars.",
+    "Fact 6: A light-year is the distance light travels in one year, about 9.46 trillion kilometers.",
+    "Fact 7: The Milky Way galaxy contains hundreds of billions of stars.",
+    "Fact 8: The largest planet in our solar system is Jupiter.",
+    "Fact 9: Saturn is famous for its prominent ring system.",
+    "Fact 10: The Hubble Space Telescope has provided images of distant galaxies."
   ]
-  
+}
