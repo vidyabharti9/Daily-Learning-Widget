@@ -7,12 +7,13 @@ body {
   background-color: #fffbec; /* Soft pastel background for light mode */
   color: #333;
   transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 16px; /* Default font size */
 }
 
 .App {
-  max-width: 800px;
+  max-width: 90vw; /* Adapt to viewport width */
   margin: 0 auto;
-  padding: 20px;
+  padding: 2rem;
 }
 
 /* Dark Mode Styles */
@@ -26,22 +27,23 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
+  padding: 1rem 0;
 }
 
 .header h1 {
-  font-size: 3rem; /* Larger, playful size */
+  font-size: 2.5rem; /* Fluid font size */
   margin: 0;
   color: #f77f00; /* Bright orange for primary color */
 }
 
 .chip-container {
   display: flex;
-  gap: 10px;
+  gap: 1rem; /* Use rem for responsive gap */
+  flex-wrap: wrap; /* Make chips wrap on small screens */
 }
 
 .chip {
-  padding: 12px 18px; /* Larger buttons */
+  padding: 0.75rem 1rem; /* Larger buttons */
   border: none;
   border-radius: 20px;
   background-color: #ffb4a2; /* Soft pink chips */
@@ -71,8 +73,8 @@ body {
 
 /* Fact Container Styles */
 .fact-container {
-  margin: 20px 0;
-  padding: 25px;
+  margin: 2rem 0;
+  padding: 1.5rem;
   border-radius: 15px; /* Rounded corners */
   background-color: #ffddd2; /* Light pink background */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -85,7 +87,7 @@ body {
 
 /* Buttons */
 .mark-learned-button, .bookmark-button, .delete-button {
-  padding: 12px 18px;
+  padding: 0.75rem 1rem;
   border: none;
   border-radius: 10px;
   font-size: 1.2rem; /* Larger font for better readability */
@@ -123,7 +125,7 @@ body {
 
 /* Progress Bar */
 .progress-container {
-  margin-top: 20px;
+  margin-top: 2rem;
   height: 15px; /* Thicker bar for visibility */
   background-color: #ffb4a2; /* Light pink background */
   border-radius: 10px;
@@ -138,7 +140,7 @@ body {
 
 /* Bookmarked Facts */
 .bookmarked-facts {
-  margin: 20px 0;
+  margin: 2rem 0;
 }
 
 .bookmarked-facts h3 {
@@ -155,7 +157,7 @@ body {
 .congratulations-message {
   background-color: #8ecae6; /* Soft blue background */
   color: white;
-  padding: 20px;
+  padding: 1.5rem;
   border-radius: 15px;
   text-align: center;
   font-size: 1.5rem; /* Larger font for a fun congratulation message */
@@ -167,7 +169,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 20px;
+  padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   background-color: #ffddd2; /* Light pink for the dialog */
@@ -203,7 +205,7 @@ body {
 .snackbar {
   background-color: #8ecae6; /* Soft blue snackbar */
   color: white;
-  padding: 15px;
+  padding: 1rem;
   border-radius: 10px;
   position: fixed;
   bottom: 20px;
@@ -211,4 +213,78 @@ body {
   transform: translateX(-50%);
   font-size: 1.2rem; /* Larger, readable font */
   transition: opacity 0.5s ease;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For tablets and larger screens */
+@media (min-width: 768px) {
+  .header h1 {
+    font-size: 3rem;
+  }
+
+  .chip {
+    padding: 1rem 1.5rem;
+  }
+
+  .fact-container {
+    padding: 2rem;
+  }
+
+  .mark-learned-button, .bookmark-button, .delete-button {
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  .settings-dialog {
+    padding: 3rem;
+  }
+}
+
+/* For large desktops and bigger screens */
+@media (min-width: 1024px) {
+  .header h1 {
+    font-size: 4rem;
+  }
+
+  .chip {
+    padding: 1.5rem 2rem;
+  }
+
+  .fact-container {
+    padding: 2.5rem;
+  }
+
+  .mark-learned-button, .bookmark-button, .delete-button {
+    padding: 1.5rem 2rem;
+    font-size: 1.75rem;
+  }
+
+  .settings-dialog {
+    padding: 4rem;
+  }
+}
+
+/* For smaller screens (phones) */
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .chip {
+    padding: 0.5rem 1rem;
+  }
+
+  .fact-container {
+    padding: 1rem;
+  }
+
+  .mark-learned-button, .bookmark-button, .delete-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  .settings-dialog {
+    padding: 1.5rem;
+  }
 }
