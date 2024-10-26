@@ -1,75 +1,46 @@
-<<<<<<< HEAD
-# Daily-Learning-Widget
-A React-based learning app where users can explore facts from different subjects, track progress, and bookmark favorites. It has a simple and interactive design with light and dark themes.
-=======
-# Getting Started with Create React App
+Daily Learning Widget 📚
+The Daily Learning Widget is a fun and interactive tool to enhance daily knowledge across a variety of subjects like physics, chemistry, biology, and astronomy. This widget offers engaging facts, helps track your learning progress, and includes features like bookmarking and level progression.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Features**
+Randomized Facts: Get a new random fact from your chosen subject each day.after refrshing get a new fact of selected subject
+Mark as Learned: Track facts you’ve learned for each subject.
+Bookmark Facts: Save interesting facts to review later can also delete later.
+Level Progression: Complete a set number of facts to level up.
+Dark Mode: Toggle dark mode for a comfortable viewing experience.
+Settings Panel: View learned facts history and clear it if needed.
 
-## Available Scripts
+**Tech Stack**
+React for UI components
+Local Storage for data persistence
+JavaScript for interactivity
 
-In the project directory, you can run:
+Getting Started
+Prerequisites
+Ensure you have Node.js and npm installed. You can install these from Node.js.
 
-### `npm start`
+**Installation**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Clone this repository:
+   git clone [https://github.com/your-username/daily-learning-widget.git](https://github.com/vidyabharti9/Daily-Learning-Widget/)
+- Navigate to the project directory:
+   cd daily-learning-widget
+- Install dependencies:
+   npm install
+- Start the development server:
+   npm start
+  
+**Usage**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Select a subject to learn about from the available options (Physics, Chemistry, Biology, Astronomy).
+Read the displayed fact, and mark it as "Learned" if you want to track your progress.
+Bookmark facts for later reference.
+Access your learned facts in the settings panel, where you can also clear your learning history.
+Folder Structure
+src/App.js - Main application logic.
+src/facts.json - Data file containing categorized facts.
+src/App.css - Custom styles for the widget.
 
-### `npm test`
+**Customization**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> master
+Facts: Update facts.json to add or change facts.
+UI: Customize styles in App.css to match your preference.
