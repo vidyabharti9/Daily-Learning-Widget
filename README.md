@@ -21,7 +21,7 @@ Ensure you have Node.js and npm installed. You can install these from Node.js.
 **Installation**
 
 - Clone this repository:
-   git clone [https://github.com/your-username/daily-learning-widget.git](https://github.com/vidyabharti9/Daily-Learning-Widget/)
+   git clone (https://github.com/vidyabharti9/Daily-Learning-Widget/)
 - Navigate to the project directory:
    cd daily-learning-widget
 - Install dependencies:
