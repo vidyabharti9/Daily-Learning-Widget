@@ -1,6 +1,6 @@
 **Daily Learning Widget 📚**
 
-The Daily Learning Widget is a fun and interactive tool to enhance daily knowledge across a variety of subjects like physics, chemistry, biology, and astronomy. This widget offers engaging facts, helps track your learning progress, and includes features like bookmarking and level progression.
+The Daily Learning Widget is a fun and interactive tool to enhance daily knowledge across various subjects like physics, chemistry, biology, and astronomy. This widget offers engaging facts, helps track your learning progress, and includes features like bookmarking and level progression.
 
 ### Features
 - **Randomized Facts**: Get a new random fact from your chosen subject each day. After refreshing, receive a new fact from the selected subject.  
@@ -40,3 +40,6 @@ Ensure you have Node.js and npm installed. You can install these from the Node.j
 ### Customization
 - **Facts**: Update `facts.json` to add or change facts.  
 - **UI**: Customize styles in `App.css`.  
+
+### Deployment
+You can access the live version of the Daily Learning Widget [here](https://learningwidget.netlify.app/).
