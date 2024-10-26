@@ -31,10 +31,10 @@ Ensure you have Node.js and npm installed. You can install these from Node.js.
   
 **Usage**
 
- Select a subject to learn about from the available options (Physics, Chemistry, Biology, Astronomy).
- Read the displayed fact, and mark it as "Learned" if you want to track your progress.
- Bookmark facts for later reference.
- Access your learned facts in the settings panel, where you can also clear your learning history.
+ Select a subject to learn about from the available options (Physics, Chemistry, Biology, Astronomy)
+ Read the displayed fact, and mark it as "Learned" if you want to track your progress
+ Bookmark facts for later reference
+ Access your learned facts in the settings panel, where you can also clear your learning history
  
 **Folder Structure**
 
